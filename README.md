@@ -3,7 +3,7 @@
 
 Modulo Terraform voltado para o vCenter.
 
-#### Preparando o template
+### Preparando o template
 Primeiramente é preciso preparar um template de máquina virtual no vCenter. 
 
 Para isso, será criada uma máquina normal, levando em conta os seus padrões de particionamento e segurança.
@@ -14,7 +14,7 @@ Em seguida, deverá ser o utilizado um [script de formatação de vm](https://gi
 
 Após desligar a máquina, no vCenter vá na aba *Hosts and Clusters* -> clique no botão direito no nome da máquina -> *Template* -> *Convert to Template*.
 
-#### Preparando as credenciais Terraform
+### Preparando as credenciais Terraform
 Por questões de segurança, as suas credenciais e endereço do VCenter não devem ser adicionadas diretamente no código.
 
 Para isso será utilizada a ferramenta Pass para encriptar suas credenciais.
