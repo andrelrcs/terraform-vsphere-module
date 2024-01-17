@@ -15,7 +15,7 @@ Em seguida, poderá ser utilizado um [script de formatação de vm](https://gith
 Após desligar a máquina, no vCenter vá na aba *Hosts and Clusters* -> clique no botão direito no nome da máquina -> *Template* -> *Convert to Template*.
 
 ### Preparando as credenciais Terraform
-Por questões de segurança, as suas credenciais e endereço do VCenter não devem ser adicionadas diretamente no código.
+Por questões de segurança, as suas credenciais e endereço do vSphere não devem ser adicionadas diretamente no código.
 
 Para isso será utilizada a ferramenta Pass para encriptar suas credenciais.
 
