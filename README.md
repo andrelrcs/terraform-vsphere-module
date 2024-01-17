@@ -89,6 +89,16 @@ export TF_VAR_vsphere_server=$(pass server)
 
 > Quando rodar o terraform apply as credenciais serão identificadas automaticamente.
 
+### Módulos
+O Terraform trabalha com módulos, que como em uma linguagem de programação qualquer, são basicamente “funções”, que processam um ou alguns “resources” em conjunto e evita a repetição de código.
+
+Qualquer arquivo de configuração Terraform (`.tf`) em um diretório, mesmo que seja apenas um, forma um módulo.
+
+Quando um arquivo de configuração está utilizando outros arquivos de configuração, este então é chamado de **root module (módulo raiz)** e os arquivos utilizados são **child modules (módulos filhos)**.
+
+Neste projeto se constitui do módulo filho com um arquivo `main.tf` e `variables.tf`, que será chamado no arquivo `main.tf` do módulo raiz que será criado seguindo o exemplo abaixo.
+
+
 ### Utilizando o Terraform
 Neste Framework, o módulo filho gera novas máquinas a partir da clonagem de templates pré-configurados no arquivo `main.tf` e declara todas as variáveis em `variables.tf`. 
 
