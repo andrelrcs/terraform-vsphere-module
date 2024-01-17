@@ -132,7 +132,7 @@ module "modulo_create_vm" {
     vsphere_dc              = "XXXXX-XX" #Data Center
     vsphere_datastore_name  = "XX_XXXXX_XXXX" #Storage
     vsphere_folder          = "XXXXX/XXXX" #Pasta
-    vsphere_resource        = "XXXXX" #Resource Pool
+    vsphere_resource        = "XXXXX" #Resource Pool (Se não houver uma pool específica utilize apenas "Resources")
     vsphere_rede            = "xxxx" #Nome da portgroup (rede da maquina)
     vsphere_qtd_hosts       = "x" #Número de máquinas
     vsphere_cpus            = "x" #Número de vCPUs
