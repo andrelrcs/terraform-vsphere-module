@@ -8,7 +8,7 @@ Primeiramente é preciso preparar um template de máquina virtual no vCenter.
 
 Para isso, será criada uma máquina normal, levando em conta os seus padrões de particionamento e segurança.
 
-Em seguida, deverá ser o utilizado um [script de formatação de vm](https://github.com/fabianlee/tf-vsphere-singlevm-from-template/blob/main/on_template_only/prepare-ubuntu-22.04-template.sh), que irá limpar informações como IP, hostname e histórico e deixar a máqina pronta para ser desligada e transformada em Template.
+Em seguida, poderá ser utilizado um [script de formatação de vm](https://github.com/fabianlee/tf-vsphere-singlevm-from-template/blob/main/on_template_only/prepare-ubuntu-22.04-template.sh), que irá limpar informações como IP, hostname e histórico e deixar a máqina pronta para ser desligada e transformada em Template.
 
 > Basta criar um arquivo na maquina com a extensão '.sh', adicionar o conteúdo do link acima e transformá-lo em executável da seguinte forma: "chmod +x nome_script.sh". Em seguida, execute-o "./nome_script.sh".
 
