@@ -138,12 +138,12 @@ module "modulo_create_vm" {
     vsphere_cpus            = "x" #Número de vCPUs
     vsphere_memory_mb       = "xxxx" #Tamanho de Memória RAM em MBs (apenas o numero) (Ex: 2GB = 2048)
     vsphere_disksize_gb     = "XX" #Tamanho do HD extra em GBs (mínimo 40)
-    vsphere_template        = "xxxxxxx" #Nome do Template a ser clonado (Padrão: Template UBUNTU 22.04.3 LTS )
+    vsphere_template        = "xxxxxxx" #Nome do Template a ser clonado 
 
     vsphere_namevm          = ["xxxx"] #Nome da máquina no VCenter.(Para mais de uma máquina será: ["xxx1", "xxx2"])
     vsphere_hostname        = ["xxxx"] #Hostname no sistema (lembrete, o linux não aceita "." no hostname) (Para mais de uma máquina será: ["xxx1", "xxx2"])
 
-    vsphere_domain          = "vcenter.local" #Dominio da maquina
+    vsphere_domain          = "vsphere.local" #Dominio da maquina
     vsphere_ip              = ["XXX.XXX.XXX.XXX"] #IP da máquina (Para mais de uma máquina será: ["XXX.XXX.XXX.XX2", "XXX.XXX.XXX.XX3"])
     vsphere_ipmask          = "xx" #CIDR da rede (Ex: Para máscara 255.255.255.0 o CIDR é 24) 
     vsphere_gateway         = "172.16.2.254" #IP do gateway
