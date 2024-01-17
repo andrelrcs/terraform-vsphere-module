@@ -10,7 +10,7 @@ Para isso, será criada uma máquina normal, levando em conta os seus padrões d
 
 Em seguida, deverá ser o utilizado um [script de formatação de vm](https://github.com/fabianlee/tf-vsphere-singlevm-from-template/blob/main/on_template_only/prepare-ubuntu-22.04-template.sh), que irá limpar informações como IP, hostname e histórico e deixar a máqina pronta para ser desligada e transformada em Template.
 
-> Basta criar um arquivo na maquina com a extensão '.sh' adicionar o conteúdo do link acima e transformá-lo em executável da seguinte forma: "chmod +x nome_script.sh". Em seguida, execute-o "./nome_script.sh".
+> Basta criar um arquivo na maquina com a extensão '.sh', adicionar o conteúdo do link acima e transformá-lo em executável da seguinte forma: "chmod +x nome_script.sh". Em seguida, execute-o "./nome_script.sh".
 
 Após desligar a máquina, no vCenter vá na aba *Hosts and Clusters* -> clique no botão direito no nome da máquina -> *Template* -> *Convert to Template*.
 
